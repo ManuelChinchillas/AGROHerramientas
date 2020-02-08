@@ -1,0 +1,4 @@
+c:\users\sistemas\documents\visual studio 2015\Projects\AGROHerramientas\MisControles\bin\Debug\MisControles.dll
+c:\users\sistemas\documents\visual studio 2015\Projects\AGROHerramientas\MisControles\bin\Debug\MisControles.pdb
+c:\users\sistemas\documents\visual studio 2015\Projects\AGROHerramientas\MisControles\obj\Debug\MisControles.dll
+c:\users\sistemas\documents\visual studio 2015\Projects\AGROHerramientas\MisControles\obj\Debug\MisControles.pdb

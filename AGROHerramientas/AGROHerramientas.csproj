@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C65BCF56-046A-496B-8FF4-4B937188FEF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AGROHerramientas</RootNamespace>
+    <AssemblyName>AGROHerramientas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono-NotificacionAutorizacion128i.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20073.357, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventarios\BuscarPendienteEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\BuscarPendienteEntrega.Designer.cs">
+      <DependentUpon>BuscarPendienteEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\BuscarPendienteEntregaVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\BuscarPendienteEntregaVentas.Designer.cs">
+      <DependentUpon>BuscarPendienteEntregaVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\EntregaDeMercancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\EntregaDeMercancia.Designer.cs">
+      <DependentUpon>EntregaDeMercancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\InvConsultas.cs" />
+    <Compile Include="Inventarios\InvEntregaMercancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\InvEntregaMercancia.Designer.cs">
+      <DependentUpon>InvEntregaMercancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\Lugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\Lugar.Designer.cs">
+      <DependentUpon>Lugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\ValeEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\ValeEntrega.Designer.cs">
+      <DependentUpon>ValeEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarios\VentaAEntregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\VentaAEntregar.Designer.cs">
+      <DependentUpon>VentaAEntregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_In.cs" />
+    <Compile Include="Inventarios\PendienteDeEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios\PendienteDeEntrega.Designer.cs">
+      <DependentUpon>PendienteDeEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\RepConsultas.cs" />
+    <Compile Include="Reportes\ReportePendientesDeEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportePendientesDeEntrega.Designer.cs">
+      <DependentUpon>ReportePendientesDeEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tableros\TabConsultas.cs" />
+    <Compile Include="Tableros\TableroCierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tableros\TableroCierre.Designer.cs">
+      <DependentUpon>TableroCierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tableros\TableroMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tableros\TableroMovimientos.Designer.cs">
+      <DependentUpon>TableroMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tableros\Tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tableros\Tareas.Designer.cs">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioIniciado.cs" />
+    <EmbeddedResource Include="Inventarios\BuscarPendienteEntrega.resx">
+      <DependentUpon>BuscarPendienteEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\BuscarPendienteEntregaVentas.resx">
+      <DependentUpon>BuscarPendienteEntregaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\EntregaDeMercancia.resx">
+      <DependentUpon>EntregaDeMercancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\InvEntregaMercancia.resx">
+      <DependentUpon>InvEntregaMercancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\Lugar.resx">
+      <DependentUpon>Lugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\ValeEntrega.resx">
+      <DependentUpon>ValeEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\VentaAEntregar.resx">
+      <DependentUpon>VentaAEntregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios\PendienteDeEntrega.resx">
+      <DependentUpon>PendienteDeEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\ReportePendientesDeEntrega.resx">
+      <DependentUpon>ReportePendientesDeEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tableros\TableroCierre.resx">
+      <DependentUpon>TableroCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tableros\TableroMovimientos.resx">
+      <DependentUpon>TableroMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tableros\Tareas.resx">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{D723861B-13A9-4009-8AA1-060BAFB4A654}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conexiones\Conexiones.csproj">
+      <Project>{F4199962-8035-418A-B81B-119FED6A0064}</Project>
+      <Name>Conexiones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MisControles\MisControles.csproj">
+      <Project>{B705E46E-D286-4FE7-819D-C1334A389AF5}</Project>
+      <Name>MisControles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_invisible_82734.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_visible_83082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icono-NotificacionAutorizacion128i.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
